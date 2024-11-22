@@ -1,5 +1,14 @@
-<h1> list movies    </h1>
-<p> So de chegar aqui me sinto vencedor !!</p>
-<p><% @lists.each do |list| %> </p>
+
+
+<div class="container">
+
+    <h1> list movies    </h1>
+    <p> So de chegar aqui me sinto vencedor !!</p>
+    <p><% @lists.each do |list| %> </p>
     <p><%= list.name  %></p>
     <p><%end %></p>
+
+</div>
+
+<div class="card" ><%= link_to "nova lista", new_list_path %></div>
+    
